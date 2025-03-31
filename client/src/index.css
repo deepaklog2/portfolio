@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  :root {
+    --background: 220 85% 12%;
+    --foreground: 0 0% 100%;
+    --card: 220 75% 18%;
+    --card-foreground: 0 0% 100%;
+    --popover: 220 75% 18%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 210 90% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 195 85% 55%;
+    --secondary-foreground: 220 85% 12%;
+    --muted: 220 50% 25%;
+    --muted-foreground: 210 20% 80%;
+    --accent: 195 85% 55%;
+    --accent-foreground: 220 85% 12%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 50% 25%;
+    --input: 220 50% 25%;
+    --ring: 210 90% 60%;
+    --radius: 0.5rem;
+    
+    /* Light theme specific */
+    --light-bg: 220 85% 12%;
+    --light-accent1: 210 90% 60%;
+    --light-accent2: 195 85% 55%;
+    --light-grid: 220 50% 25%;
+    --light-surface: 220 75% 18%;
+    --light-foreground: 0 0% 100%;
+    --light-muted-foreground: 210 20% 80%;
+  }
+
+  .dark {
+    --background: 220 85% 12%;
+    --foreground: 0 0% 100%;
+    --card: 220 75% 18%;
+    --card-foreground: 0 0% 100%;
+    --popover: 220 75% 18%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 210 90% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 195 85% 55%;
+    --secondary-foreground: 220 85% 12%;
+    --muted: 220 50% 25%;
+    --muted-foreground: 210 20% 80%;
+    --accent: 195 85% 55%;
+    --accent-foreground: 220 85% 12%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 50% 25%;
+    --input: 220 50% 25%;
+    --ring: 210 90% 60%;
+    
+    /* Dark theme specific */
+    --dark-bg: 220 85% 12%;
+    --dark-accent1: 210 90% 60%; 
+    --dark-accent2: 195 85% 55%;
+    --dark-grid: 220 50% 25%;
+    --dark-surface: 220 75% 18%;
+    --dark-foreground: 0 0% 100%;
+    --dark-muted-foreground: 210 20% 80%;
+  }
+  
+  /* Chart colors for both themes */
+  :root {
+    --chart-1: 210 90% 60%;
+    --chart-2: 195 85% 55%;
+    --chart-3: 220 85% 50%;
+    --chart-4: 240 80% 65%;
+    --chart-5: 190 100% 50%;
+  }
+  
+  /* Sidebar colors */
+  :root {
+    --sidebar-background: var(--card);
+    --sidebar-foreground: var(--card-foreground);
+    --sidebar-primary: var(--primary);
+    --sidebar-primary-foreground: var(--primary-foreground);
+    --sidebar-accent: var(--accent);
+    --sidebar-accent-foreground: var(--accent-foreground);
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--ring);
+  }
+}
+
+/* Font families */
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.font-cyber {
+  font-family: 'Audiowide', cursive;
+}
+
+/* Neon text effect */
+.neon-text {
+  text-shadow: 0 0 5px rgba(20, 150, 255, 0.7), 0 0 10px rgba(20, 150, 255, 0.5);
+}
+
+/* Grid background */
+.grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(var(--light-grid), 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(var(--light-grid), 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.dark .grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(var(--dark-grid), 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(var(--dark-grid), 0.1) 1px, transparent 1px);
+}
+
+/* Animations */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+/* Background gradients */
+.from-light-accent1 {
+  --tw-gradient-from: hsl(var(--light-accent1)) var(--tw-gradient-from-position);
+  --tw-gradient-to: hsl(var(--light-accent1) / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-light-accent2 {
+  --tw-gradient-to: hsl(var(--light-accent2)) var(--tw-gradient-to-position);
+}
+
+.from-dark-accent1 {
+  --tw-gradient-from: hsl(var(--dark-accent1)) var(--tw-gradient-from-position);
+  --tw-gradient-to: hsl(var(--dark-accent1) / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-dark-accent2 {
+  --tw-gradient-to: hsl(var(--dark-accent2)) var(--tw-gradient-to-position);
+}
+
+/* Basic utility classes needed for rendering */
+.text-light-accent1 {
+  color: hsl(var(--light-accent1));
+}
+
+.text-light-accent2 {
+  color: hsl(var(--light-accent2));
+}
+
+.text-dark-accent1 {
+  color: hsl(var(--dark-accent1));
+}
+
+.text-dark-accent2 {
+  color: hsl(var(--dark-accent2));
+}
+
+.bg-light-bg {
+  background-color: hsl(var(--light-bg));
+}
+
+.bg-dark-bg {
+  background-color: hsl(var(--dark-bg));
+}
+
+.bg-light-surface {
+  background-color: hsl(var(--light-surface));
+}
+
+.bg-dark-surface {
+  background-color: hsl(var(--dark-surface));
+}
+
+.text-light-foreground {
+  color: hsl(var(--light-foreground));
+}
+
+.text-dark-foreground {
+  color: hsl(var(--dark-foreground));
+}
+
+.text-light-muted-foreground {
+  color: hsl(var(--light-muted-foreground));
+}
+
+.text-dark-muted-foreground {
+  color: hsl(var(--dark-muted-foreground));
+}
+
+.border-light-accent1 {
+  border-color: hsl(var(--light-accent1));
+}
+
+.border-dark-accent1 {
+  border-color: hsl(var(--dark-accent1));
+}
+
+.border-light-accent2 {
+  border-color: hsl(var(--light-accent2));
+}
+
+.border-dark-accent2 {
+  border-color: hsl(var(--dark-accent2));
+}
+
+/* PDF Rendering Class - For PDF export formatting */
+.pdf-rendering {
+  background-color: white !important;
+  color: black !important;
+  box-shadow: none !important;
+}
+
+.pdf-rendering * {
+  color: black !important;
+  border-color: #ddd !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  opacity: 1 !important;
+  animation: none !important;
+}
+
+.pdf-rendering h1, 
+.pdf-rendering h2, 
+.pdf-rendering h3, 
+.pdf-rendering h4, 
+.pdf-rendering h5, 
+.pdf-rendering h6 {
+  color: #333 !important;
+}
+
+.pdf-rendering .bg-light-surface, 
+.pdf-rendering .bg-dark-surface {
+  background-color: white !important;
+  border-color: #ddd !important;
+}
+
+.pdf-rendering .text-light-accent2,
+.pdf-rendering .text-dark-accent2,
+.pdf-rendering .text-light-accent1,
+.pdf-rendering .text-dark-accent1 {
+  color: #1474d4 !important;
+}
+
+.pdf-rendering .text-light-muted-foreground,
+.pdf-rendering .text-dark-muted-foreground {
+  color: #666 !important;
+}
+
+.pdf-rendering .neon-text {
+  text-shadow: none !important;
+}
