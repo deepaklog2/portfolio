@@ -150,7 +150,7 @@ export function Contact() {
                     rel="noopener noreferrer" 
                     className="text-xs sm:text-sm text-light-muted-foreground dark:text-dark-muted-foreground hover:text-light-accent2 dark:hover:text-dark-accent2 transition-colors"
                   >
-                    github.com/deepakraj-18
+                    https://github.com/deepaklog2
                   </a>
                 </div>
               </div>
