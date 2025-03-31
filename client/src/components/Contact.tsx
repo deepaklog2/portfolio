@@ -145,7 +145,7 @@ export function Contact() {
                 <div>
                   <h4 className="font-display text-sm sm:text-base mb-0.5 sm:mb-1">GitHub</h4>
                   <a 
-                    href="https://github.com/deepakraj-18" 
+                    href="https://github.com/deepaklog2" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-xs sm:text-sm text-light-muted-foreground dark:text-dark-muted-foreground hover:text-light-accent2 dark:hover:text-dark-accent2 transition-colors"
@@ -163,21 +163,21 @@ export function Contact() {
               </h3>
               <div className="flex space-x-3 sm:space-x-4">
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/in/deepak-raj-r-290856235/" 
                   className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-light-surface dark:bg-dark-surface border border-light-accent1 dark:border-dark-accent1 flex items-center justify-center hover:bg-light-accent1 dark:hover:bg-dark-accent1 hover:bg-opacity-20 dark:hover:bg-opacity-20 transition-all duration-300"
                   aria-label="LinkedIn"
                 >
                   <FontAwesomeIcon icon={faLinkedinIn} className="text-light-accent2 dark:text-dark-accent2 text-sm sm:text-base" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://x.com/Venom021830" 
                   className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-light-surface dark:bg-dark-surface border border-light-accent1 dark:border-dark-accent1 flex items-center justify-center hover:bg-light-accent1 dark:hover:bg-dark-accent1 hover:bg-opacity-20 dark:hover:bg-opacity-20 transition-all duration-300"
                   aria-label="Twitter"
                 >
                   <FontAwesomeIcon icon={faTwitter} className="text-light-accent2 dark:text-dark-accent2 text-sm sm:text-base" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.instagram.com/dee_pakrajr/" 
                   className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-light-surface dark:bg-dark-surface border border-light-accent1 dark:border-dark-accent1 flex items-center justify-center hover:bg-light-accent1 dark:hover:bg-dark-accent1 hover:bg-opacity-20 dark:hover:bg-opacity-20 transition-all duration-300"
                   aria-label="Instagram"
                 >
