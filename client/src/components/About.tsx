@@ -80,7 +80,7 @@ export function About() {
             </div>
             
             <p className="text-light-muted-foreground dark:text-dark-muted-foreground">
-              I'm currently pursuing my B.E in Computer Science from St. Joseph's Institute of Technology, where I've been actively involved in various tech communities and hackathons. My goal is to create software that not only functions flawlessly but also provides an exceptional user experience.
+              I'm currently a CSE student, where I've been actively involved in various tech communities and hackathons. My goal is to create software that not only functions flawlessly but also provides an exceptional user experience.
             </p>
             <p className="text-light-muted-foreground dark:text-dark-muted-foreground">
               When I'm not coding, you can find me exploring new technologies, designing UI concepts, or contributing to open-source projects. I'm always open to learning new skills and taking on challenging projects.
